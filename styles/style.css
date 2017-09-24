@@ -1,0 +1,13 @@
+html {
+	background-color: #2D2D2D
+}
+
+div {
+	position: fixed;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 60%;
+}
