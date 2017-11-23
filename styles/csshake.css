@@ -353,8 +353,9 @@
 .shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant {
   animation-name: shake-slow;
   animation-duration: 5s;
+  animation-delay: 2s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: 1; }
 
 @keyframes shake-hard {
   2% {
@@ -919,4 +920,9 @@
 
 .shake-crazy { 
   @include do-shake('shake-crazy', 5, 5, 5, 100ms, .1, $opacity: true, $delay: 10); 
+}
+
+.my-shake {
+  animation:  shake-slow 5s 1s 1 ease-in-out,
+              shake-hard 100ms 3s 20 ease-in-out;
 }
