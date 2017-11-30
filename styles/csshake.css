@@ -923,6 +923,5 @@
 }
 
 .my-shake {
-  animation:  shake-slow 5s 1s 1 ease-in-out,
-              shake-hard 100ms 3s 20 ease-in-out;
+  animation:  shake-slow 5s 1s 1 ease-in-out;
 }
