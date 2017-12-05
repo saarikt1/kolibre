@@ -2,7 +2,7 @@ html {
 	background-color: #2D2D2D
 }
 
-div {
+/*div {
 	position: fixed;
 }
 
@@ -14,4 +14,24 @@ img {
 
 .contact {
 	color: white;
+}*/
+
+#spotify {
+	background-color: green;
+}
+
+#youtube {
+	background-color: red;
+}
+
+#facebook {
+	background-color: blue;
+}
+
+#instagram {
+	background-color: brown;
+}
+
+.pure-g img {
+	max-width: 100%;
 }
