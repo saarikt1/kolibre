@@ -1,20 +1,34 @@
-html {
-	background-color: #2D2D2D
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #2D2D2D;
 }
 
-/*div {
-	position: fixed;
-}
-
-img {
-	display: block;
+.content {
+	flex: 1 0 auto;
 	margin: 0 auto;
-	max-width: 60%;
+	max-width: 600px;
 }
 
-.contact {
-	color: white;
-}*/
+.content img {
+	box-sizing: border-box;
+	padding: 40px;
+	max-width: 100%;
+	margin: 10px auto;
+}
+
+.some {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+
+.some img {
+	display: block;
+	margin: auto;
+	max-width: 50px;
+}
 
 #spotify {
 	background-color: green;
@@ -32,6 +46,11 @@ img {
 	background-color: brown;
 }
 
-.pure-g img {
-	max-width: 100%;
+footer {
+	flex-shrink: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+	text-align: right;
+	color: white;
 }
