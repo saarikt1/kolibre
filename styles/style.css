@@ -38,12 +38,19 @@ body {
 	display: block;
 	margin: 1em auto;
 	fill: #666666;
-	transition: all .2s ease-in-out;
+	transition: fill .2s ease-in-out;
+	transition: transform .2s ease-in-out;
 }
 
-.box:hover > svg {
-	fill: #bcbcbc;
-	transform: scale(1.1);
+@media (hover:hover) {
+	.box:hover > svg {
+		fill: #bcbcbc;
+		transform: scale(1.1);
+	}
+}
+
+.box:active > svg {
+	padding-top: 1px;
 }
 
 a.boxLink {
