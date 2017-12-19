@@ -23,24 +23,30 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 600px;
-	padding-bottom: 2em;
 }
 
-.some svg {
+.box {
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+.box > svg {
 	display: block;
 	margin: 1em auto;
 	fill: #666666;
+	transition: all .2s ease-in-out;
 }
 
-.some svg:hover {
-	fill: white;
+.box:hover > svg {
+	fill: #bcbcbc;
+	transform: scale(1.1);
 }
 
-footer {
+/* footer {
 	flex-shrink: 0;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 600px;
 	text-align: right;
 	color: white;
-}
+} */
