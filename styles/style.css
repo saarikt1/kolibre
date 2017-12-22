@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -14,14 +20,12 @@ body {
 
 .content img {
 	display: block;
-	box-sizing: border-box;
 	max-width: 100%;
 	max-height: calc(100vh - 120px);
 	margin: 10px auto;
 }
 
 .some {
-	box-sizing: border-box;
 	margin: 0 auto 40px;
 	width: 100%;
 	max-width: 800px;
@@ -30,7 +34,6 @@ body {
 
 .box {
 	position: relative;
-	box-sizing: border-box;
 	padding: 1em;
 }
 
