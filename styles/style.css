@@ -47,6 +47,15 @@ body {
 		transform: scale(1.1);
 	}
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	@media (hover:hover) {
+		.box:hover > svg {
+			fill: #bcbcbc;
+			transform: scale(1.1);
+		}
+	}
+}
+
 .box:active > svg {
 	padding-top: 1px;
 }
