@@ -8,7 +8,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	background-color: #2D2D2D;
+	background-color: #000000;
 }
 
 .content {
@@ -18,12 +18,43 @@ body {
 	max-width: 800px;
 }
 
-.content img {
-	display: block;
-	max-width: 100%;
-	max-height: calc(100vh - 120px);
-	margin: 10px auto;
+.video-responsive {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
 }
+.video-responsive iframe {
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	margin: 20px auto;
+}
+
+.text {
+	color: white;
+	font-family: 'Slabo 27px', serif;
+	text-align: center;
+	margin-top: 60px;
+}
+
+a {
+	color: #eeeeee;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bbbbbb;
+}
+
+/* .content iframe {
+	display: block;
+	max-width: 95%;
+	max-height: calc(100vh - 120px);
+	margin: 20px auto;
+} */
 
 .some {
 	margin: 0 auto 40px;
