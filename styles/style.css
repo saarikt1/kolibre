@@ -6,15 +6,17 @@
 
 html {
 	background: url(../images/floral.png) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-size: cover;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 .header {
 	display: flex;
-	height: 508px;
 	justify-content: center;
 	border: red 1px solid;
 }
@@ -23,4 +25,13 @@ html {
 	width: 380px;
 	height: 380px;
 	margin: 64px;
+}
+
+.content {
+	display: flex;
+	border: red 1px solid;
+}
+
+.footer {
+  border: red 1px solid;
 }
