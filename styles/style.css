@@ -13,29 +13,29 @@ html {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	max-width: 1400px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
 .header {
 	display: flex;
-	flex-grow: 1;
+	flex: 1 1 100%;
 	justify-content: center;
 	max-height: 600px;
-	/* border: red 1px solid; */
+	border: red 1px solid;
 }
 
 #logo {
-	width: 380px;
-	height: 380px;
+	width: 30vh;
+	height: 30vh;
 	margin: 64px;
 }
 
 .content {
-	flex-grow: 1;
+	flex: 1 1 100%;
 	display: flex;
 	justify-content: space-evenly;
-	/* border: red 1px solid; */
+	border: red 1px solid;
 }
 
 .iframe-container {
@@ -46,6 +46,7 @@ html {
 	overflow: hidden;
 	max-width: 400px;
 	max-height: 225px;
+	min-width: 268px;
 	margin: 0 20px;
 }
 
@@ -66,7 +67,8 @@ html {
 }
 
 .footer {
-	/* border: red 1px solid; */
+	flex: 1 1 100%;
+	border: red 1px solid;
 }
 
 .link-box {
@@ -77,27 +79,28 @@ html {
 
 .box {
 	position: relative;
-	padding: 1em;
+	padding: 36px 48px;
+	/* border: gold 1px solid; */
 }
 
 .box>svg {
 	display: block;
-	margin: 1em auto;
-	fill: #666666;
+	/* margin: 1em auto; */
+	fill: rgb(255, 255, 255, 0.3);
 	transition: fill .2s ease-in-out;
 	transition: transform .2s ease-in-out;
 }
 
 .box:hover>svg {
-	fill: #bcbcbc;
-	transform: scale(1.1);
+	fill: rgb(255, 255, 255, 0.8);
+	transform: scale(1.05);
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	@media (hover:hover) {
 		.box:hover>svg {
-			fill: #bcbcbc;
-			transform: scale(1.1);
+			fill: rgb(255, 255, 255, 0.8);
+			transform: scale(1.05);
 		}
 	}
 }
