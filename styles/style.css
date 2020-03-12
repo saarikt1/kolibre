@@ -21,13 +21,11 @@ html {
 	display: flex;
 	flex: 2 1 100%;
 	justify-content: center;
-	max-height: 600px;
 	border: red 1px solid;
 }
 
 #logo {
-	width: 30vh;
-	height: 30vh;
+	max-width: 50%;
 	margin: 64px;
 }
 
