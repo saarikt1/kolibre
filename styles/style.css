@@ -129,3 +129,9 @@ a.boxLink {
 		max-width: 35%;
 	}
 }
+
+@media screen and (max-width: 864px) {
+	#spotify {
+		order: 1;
+	}
+}
