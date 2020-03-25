@@ -5,6 +5,6 @@ fetch('https://api.songkick.com/api/3.0/artists/190740/calendar.json?apikey=hynK
     return response.json();
   })
   .then((data) => {
-    console.log(data.resultsPage.results.event[0].start.date);
-    console.log(data.resultsPage.results.event[0].venue.displayName);
+    // console.log(data.resultsPage.results.event[0].start.date);
+    // console.log(data.resultsPage.results.event[0].venue.displayName);
   });

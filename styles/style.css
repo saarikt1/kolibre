@@ -12,16 +12,17 @@ html {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
 	max-width: 1200px;
 	margin: 0 auto;
+	min-height: 100vh;
+	/* border: blue 2px dashed; */
 }
 
 .header {
 	display: flex;
-	flex: 2 1 100%;
 	justify-content: center;
-	border: red 1px solid;
+	align-items: center;
+	/* border: green 1px solid; */
 }
 
 #logo {
@@ -30,22 +31,22 @@ html {
 }
 
 .content {
-	flex: 2 1 100%;
 	display: flex;
-	justify-content: space-evenly;
-	border: red 1px solid;
+	flex: 1 0 auto;
+	flex-flow: row wrap-reverse;
+	justify-content: center;
+	/* border: yellow 1px solid; */
 }
 
 .ratio-box-container {
-	flex: 1 1 100%;
+	flex: 1 1 auto;
 	position: relative;
-	top: 50%;
-	transform: perspective(1px) translateY(-50%);
 	overflow: hidden;
-	max-width: 400px;
-	max-height: 225px;
-	min-width: 268px;
-	margin: 0 20px;
+	max-width: 320px;
+	min-width: 240px;
+	min-height: calc(320px * (9/16));
+	margin: 16px 24px;
+	/* border: green 1px dashed; */
 }
 
 .ratio-box {
@@ -66,34 +67,29 @@ html {
 
 .footer {
 	display: flex;
-	flex: 1 1 100%;
-	flex-direction: column;
-	justify-content: flex-end;
+	flex: 0 0 auto;
+	justify-content: center;
 	align-items: center;
-	border: red 1px solid;
+	/* border: red 1px solid; */
 }
 
 .link-box {
 	display: flex;
-	justify-content: space-between;
-	max-width: 600px;
-	margin-bottom: 48px;
-	border: green 2px dashed;
-}
-
-.link-box > * {
 	flex: 1 1 100%;
+	justify-content: space-around;
+	margin: 32px 0;
+	max-width: 500px;
+	/* border: green 2px dashed; */
 }
 
 .box {
 	position: relative;
-	padding: 36px 48px;
-	border: gold 1px solid;
+	padding: 16px 16px;
+	/* border: gold 1px solid; */
 }
 
 .box>svg {
 	display: block;
-	/* margin: 1em auto; */
 	fill: rgb(255, 255, 255, 0.3);
 	transition: fill .2s ease-in-out;
 	transition: transform .2s ease-in-out;
@@ -104,7 +100,7 @@ html {
 	transform: scale(1.05);
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
 	@media (hover:hover) {
 		.box:hover>svg {
 			fill: rgb(255, 255, 255, 0.8);
@@ -126,4 +122,10 @@ a.boxLink {
 	text-decoration: none;
 	opacity: 0;
 	filter: alpha(opacity=0);
+}
+
+@media screen and (min-width: 600px) {
+	#logo {
+		max-width: 25%;
+	}
 }
